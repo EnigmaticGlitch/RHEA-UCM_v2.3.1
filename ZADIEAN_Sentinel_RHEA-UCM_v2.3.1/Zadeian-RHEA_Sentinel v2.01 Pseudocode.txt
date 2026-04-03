@@ -1,0 +1,47 @@
+Start → Launch Zadeian-RHEA_Sentinel.py
+    ↓
+Initialize MainWindow
+    ↓
+Display Main Dashboard (Buttons: Scan, Network, Evolution)
+
+Each Button Event:
+    ├──> "Scan Window" Clicked
+    │        ↓
+    │    Open ScanWindow (Toplevel)
+    │        ↓
+    │    - Use Interpreter to compute hashes + anomaly score
+    │    - Plot scan results
+    │
+    ├──> "Network Window" Clicked
+    │        ↓
+    │    Open NetworkWindow (Toplevel)
+    │        ↓
+    │    - Start Packet Sniffer
+    │    - Real-time anomaly detection
+    │    - Plot network entropy
+    │
+    └──> "Evolution Window" Clicked
+             ↓
+         Open EvolutionWindow (Toplevel)
+             ↓
+         - Start Real-Time Adaptive Feedback
+         - Display DNA Self-Evolution Chart
+         - Adjust System Thresholds Dynamically
+
+Utilities (Background Engines):
+    ├── rhea_ucm/interpreter.py       --> Ψ, Δ, Reg processing
+    ├── rhea_ucm/utils/scan.py         --> Scan engine (optional)
+    ├── rhea_ucm/utils/network_scan.py --> Packet capturing
+    ├── rhea_ucm/utils/real_time_loop.py --> Evolutionary cycles
+    └── rhea_ucm/utils/graphing.py     --> Live plotting
+
+Logs:
+    ├── scan_window.log
+    ├── network_window.log
+    ├── evolution_window.log
+    └── main_sentinel.log
+
+Assets:
+    └── icons/ (Optional UI Assets)
+
+Exit → All subprocesses killed safely → Application closes

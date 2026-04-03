@@ -1,0 +1,9 @@
+﻿# ╔══════════════════════════════════════════════════════════╗
+# ║ intrusion_config.yaml — Threat Weights Configuration     ║
+# ║ For: ZADEIAN-RHEA Sentinel IntrusionDetection Module     ║
+# ╚══════════════════════════════════════════════════════════╝
+
+threat_scoring:
+  delta_weight: 0.3      # Weight of behavioral entropy shift Δ
+  trust_weight: 0.4      # Weight of symbolic trust loss ⚖
+  bayes_weight: 0.3      # Weight of Bayesian abnormality ⧊

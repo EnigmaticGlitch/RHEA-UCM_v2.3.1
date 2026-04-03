@@ -1,0 +1,30 @@
+C:\Users\south\Documents\Theories\ZADEIAN Sentinel_Pre-Pak
+├── Zadeian-RHEA_Sentinel.py
+├── requirements.txt
+├── README.md (optional)
+├── logs\
+│   └── (runtime-generated logs)
+├── rhea_ucm\
+│   ├── __init__.py
+│   ├── interpreter.py
+│   └── utils\
+│       ├── __init__.py
+│       ├── real_time_loop.py
+│       ├── logging_setup.py
+│       ├── graphing.py
+│       ├── intrusion_detection.py
+│       ├── behavioral.py
+│       ├── network_scan.py
+│       └── core\
+│           └── __init__.py  (can remain empty for now)
+├── gui\
+│    ├── __init__.py
+│    ├── main_window.py
+│    ├── scan_window.py
+│    ├── network_window.py
+│    └── evolution_window.py
+├── assets\
+│    ├── icons\
+│    └── logos\
+└── scan\
+    └── signatures\
